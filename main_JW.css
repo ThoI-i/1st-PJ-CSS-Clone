@@ -7,8 +7,11 @@
 
 /*header*/
 /*=======================================================================*/
+a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 링크 색상을 부모 색상과 동일하게 설정 */
+}
 .body {
-  font-family: 'KakaoBold', sans-serif;
   font-size: 3rem;
 }
 .header_fixed {
@@ -19,41 +22,69 @@
   text-align: center;
   margin-left: 2%;
   width: 90%;
-  padding: 1rem;
 }
 
 .header_fixed .header_logo {
+  font-family: 'KakaoBold', sans-serif;
   width: 10%;
   font-size: 1.6rem;
   font-weight: 400;
+  padding-left: 1rem;
 }
-.header_fixed .header_text_nav {
+.header_fixed .header_text_ul {
   /* background: red; */
+  font-family: 'KakaoOTFRegular', sans-serif;
   width: 70%;
-  margin-left: 10rem;
-  font-size: 0.9rem;
+  margin-left: 15rem;
+  font-size: 1rem;
   font-weight: 540;
+  letter-spacing: -0.1rem;
 }  
-.header_fixed .header_text_nav span {
-  margin: 0 1.5rem;
+.header_fixed .header_text_ul li {
+  display: inline-flex;
+  margin: 0 0.3rem;
+}
+.header_fixed .header_text_ul li a {
+  display: block;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.header_fixed .header_text_ul li a:hover{
+  font-weight: 600;
+  text-decoration: underline;
 }
 
-.header_fixed .header_text_nav .header_text_nav_icon {
+.header_fixed .header_text_ul .header_text_ul_icon {
   /* border: 4px solid #000; */
     position: relative;
   }
 
-.header_fixed .header_text_nav i {
+.header_fixed .header_text_ul i {
   /* background: red; */
-  font-size: 0.4rem;
+  font-size: 0.6rem;
   position: absolute;
-  top:0.25rem;
+  top: 2.2rem;
 }
-.header_fixed .header_icon_nav{
-  background: blue;
+.header_fixed .header_icon_ul{
+  /* background: blue; */
   text-align: end;
   width: 20%;
 }
-.header_fixed .header_icon_nav span{
-margin: 0 0.5rem;
+.header_fixed .header_icon_ul li {
+  font-size: 1.2rem;
+  display: inline-flex;
 }
+.header_fixed .header_icon_ul li a{
+  display: block;
+  padding: 0.4rem;
+  margin: 0.2rem;
+  width: 100%;
+  height: 100%;
+}
+.header_fixed .header_icon_ul li:hover {
+  background: rgba(128, 128, 128, 0.15);
+  border-radius: 100%;
+}
+
+
