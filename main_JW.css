@@ -1,1 +1,59 @@
+/* Reset CSS */
 @import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css');
+
+
+/*header*/
+/*=======================================================================*/
+.body {
+  font-family: 'KakaoBold', sans-serif;
+  font-size: 3rem;
+}
+.header_fixed {
+  /* background: green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  text-align: center;
+  margin-left: 2%;
+  width: 90%;
+  padding: 1rem;
+}
+
+.header_fixed .header_logo {
+  width: 10%;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.header_fixed .header_text_nav {
+  /* background: red; */
+  width: 70%;
+  margin-left: 10rem;
+  font-size: 0.9rem;
+  font-weight: 540;
+}  
+.header_fixed .header_text_nav span {
+  margin: 0 1.5rem;
+}
+
+.header_fixed .header_text_nav .header_text_nav_icon {
+  /* border: 4px solid #000; */
+    position: relative;
+  }
+
+.header_fixed .header_text_nav i {
+  /* background: red; */
+  font-size: 0.4rem;
+  position: absolute;
+  top:0.25rem;
+}
+.header_fixed .header_icon_nav{
+  background: blue;
+  text-align: end;
+  width: 20%;
+}
+.header_fixed .header_icon_nav span{
+margin: 0 0.5rem;
+}
