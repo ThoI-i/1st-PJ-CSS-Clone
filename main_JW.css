@@ -14,15 +14,18 @@ a {
 body {
   height: 2000px;
 }
+
 .header_fixed {
   /* background: green; */
   position: fixed;
+  background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;  
   text-align: center;
-  margin-left: 2%;
   width: 90%;
+  margin-left: 2%;
+  z-index: 100;
 }
 
 .header_fixed .header_logo {
@@ -32,15 +35,19 @@ body {
   font-weight: 400;
   padding-left: 1rem;
 }
+/*header_text_ul*/
+/*---------------------------------------*/
 .header_fixed .header_text_ul {
   /* background: red; */
   font-family: 'KakaoOTFRegular', sans-serif;
   width: 70%;
   margin-left: 15rem;
-  font-size: 1rem;
   font-weight: 540;
-  letter-spacing: -0.1rem;
 }  
+.header_fixed .header_text_ul,
+.Atc1_Left .Atc1_Left_a_box_Left {
+  letter-spacing: -0.1rem;
+}
 .header_fixed .header_text_ul li {
   display: inline-flex;
   margin: 0 0.3rem;
@@ -67,6 +74,8 @@ body {
   position: absolute;
   top: 2.2rem;
 }
+/*header_icon_ul*/
+/*---------------------------------------*/
 .header_fixed .header_icon_ul{
   /* background: blue; */
   text-align: end;
@@ -87,5 +96,76 @@ body {
   background: rgba(128, 128, 128, 0.15);
   border-radius: 100%;
 }
+/* END header */
+/*=======================================================================*/
+
+/*main → Atc1*/
+/*=======================================================================*/
+.Atc1 {
+  padding-top: 5rem;
+  padding-left: 5.8rem;
+  width: 90%;
+}
+/*Atc1_Left*/
+/*---------------------------------------*/
+.Atc1 .Atc1_Left {
+  width: 89%;
+  position: relative;
+}
+.Atc1 .Atc1_Left video {
+  width: 95%;
+  border-radius: 2rem;
+}
+.Atc1_Left .Atc1_Left_a_box_Left {
+  width: 15%;
+  padding: 1.5rem 0 1.5rem 0rem;
+  background: #fff;
+  border-radius: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 1.1rem;
+  font-family: 'KakaoOTFRegular', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 540;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Atc1_Left .Atc1_Left_a_box_Left::before {
+
+}
+.Atc1_Left .Atc1_Left_a_box_Left::after {
+  
+}
+
+/* .Atc1_Left .Atc1_Left_a_box_Left .Atc1_Left_a_left {
+  } */
+.Atc1_Left .Atc1_Left_a_box_Left .Atc1_Left_a_Left_icon {
+  margin-left: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Atc1_Left .Atc1_Left_a_box_Left .Atc1_Left_a_Left_icon:hover {
+ background: rgba(0,0,0,0.8)
+}
 
 
+
+
+.Atc1_Left_a_right {
+}
+
+/*Atc1_Right*/
+/*---------------------------------------*/
+.Atc1_Right {
+  width: 20%;
+}
