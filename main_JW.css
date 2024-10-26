@@ -45,7 +45,8 @@ body {
   font-weight: 540;
 }  
 .header_fixed .header_text_ul,
-.Atc1_Left .Atc1_Left_a_box_Left {
+.Atc1_Left .Atc1_Left_a_box_Left,
+.Atc1_Left .Atc1_Left_text_right {
   letter-spacing: -0.1rem;
 }
 .header_fixed .header_text_ul li {
@@ -113,7 +114,7 @@ body {
   position: relative;
 }
 .Atc1 .Atc1_Left video {
-  width: 95%;
+  width: 94%;
   border-radius: 2rem;
 }
 /*Atc1_Left_a_box_Left*/
@@ -152,11 +153,46 @@ body {
 /*Atc1_Left_a_box_right*/
 /*---------------------------------------*/
 .Atc1_Left .Atc1_Left_a_box_right {
-  background: url('./img_JW/JW_Atc1_light.gif') no-repeat;
+  background: #fff;
+  border-radius: 0 0 0 2rem;
   position: absolute;
-  top: 0;
+  top: -1rem;
+  right: 5.2rem;
+  width: 6rem;
+  padding: 0.5rem 2.2rem;
+}
+.Atc1_Left .Atc1_Left_a_box_right .Atc1_Left_a_right img{
+  width: 100%;
+}
+.Atc1_Left .Atc1_Left_a_box_right .Atc1_Left_a_right .Atc1_Left_text_right{
+  font-size: 0.8rem;
+  top: -2rem;
+  right: 1rem;
+  position: absolute;
+  width: 7rem;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  font-weight: 540;
+  padding: 0.9rem 1rem;
+  border-radius: 0.8rem;
+  z-index: 101;
+  opacity: 0;
+}
+.Atc1_Left .Atc1_Left_a_box_right .Atc1_Left_a_right .Atc1_Left_text_right::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* 말풍선 꼬리를 아래쪽에 배치 */
+  left: 50%;
+  margin-left: -1.8rem;
+  border-width: 0.35rem;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
 }
 
+.Atc1_Left .Atc1_Left_a_box_right .Atc1_Left_a_right:hover .Atc1_Left_text_right{
+  opacity: 1;
+}
 
 /*Atc1_Right*/
 /*---------------------------------------*/
