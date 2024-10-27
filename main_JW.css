@@ -27,7 +27,7 @@ body {
   z-index: 100;
 }
 
-/* header_logo: kakao */
+/* header_logo:헤더 좌상단-kakao */
 /*---------------------------------------*/
 .header_fixed .header_logo {
   font-family: 'KakaoBold', sans-serif;
@@ -36,7 +36,7 @@ body {
   font-weight: 400;
   padding-left: 1rem;
 }
-/*header_text_ul: 텍스트 영역(소개/이야기/기술과 서비스/약속과 책임/뉴스/투자 정보*/
+/*header_text_ul:헤더 중심부-텍스트 영역(소개/이야기/기술과 서비스/약속과 책임/뉴스/투자 정보*/
 /*---------------------------------------*/
 .header_fixed .header_text_ul {
   /* background: red; */
@@ -69,13 +69,36 @@ body {
   /* border: 4px solid #000; */
     position: relative;
   }
+  /*header_icon_ul: 투자정보"↑" 부분*/
 .header_fixed .header_text_ul i {
   /* background: red; */
   font-size: 0.6rem;
   position: absolute;
   top: 2.2rem;
 }
-/*header_text_ul_1st_li: 텍스트 영역:hover 시 상세 메뉴*/
+/*header_icon_ul:헤더 우상단-아이콘 영역/
+/*---------------------------------------*/
+.header_fixed .header_icon_ul{
+  /* background: blue; */
+  text-align: end;
+  width: 20%;
+}
+.header_fixed .header_icon_ul li {
+  font-size: 1.2rem;
+  display: inline-flex;
+}
+.header_fixed .header_icon_ul li a{
+  display: block;
+  padding: 0.4rem;
+  margin: 0.2rem;
+  width: 100%;
+  height: 100%;
+}
+.header_fixed .header_icon_ul li:hover {
+  background: rgba(128, 128, 128, 0.15);
+  border-radius: 100%;
+}
+/*header_text_ul_1st_li:헤더 중심부-텍스트 영역:hover 시 상세 메뉴*/
 /*---------------------------------------*/
 .header_fixed .header_text_ul .header_text_ul_1st_li .header_text_ul_1st_li_ul,
 .header_fixed .header_text_ul .header_text_ul_2nd_li .header_text_ul_2nd_li_ul,
@@ -135,40 +158,17 @@ body {
   top: 70%; 
   left: 43rem;
 }
-
-/*header_icon_ul - 전구*/
-/*---------------------------------------*/
-.header_fixed .header_icon_ul{
-  /* background: blue; */
-  text-align: end;
-  width: 20%;
-}
-.header_fixed .header_icon_ul li {
-  font-size: 1.2rem;
-  display: inline-flex;
-}
-.header_fixed .header_icon_ul li a{
-  display: block;
-  padding: 0.4rem;
-  margin: 0.2rem;
-  width: 100%;
-  height: 100%;
-}
-.header_fixed .header_icon_ul li:hover {
-  background: rgba(128, 128, 128, 0.15);
-  border-radius: 100%;
-}
 /* END header */
 /*=======================================================================*/
 
-/*main → Atc1*/
+/*main → Atc1:첫 번째 아티클 영역: 동영상 + 세로 박스 3개*/
 /*=======================================================================*/
 .Atc1 {
   padding-top: 5rem;
   padding-left: 5.8rem;
   width: 90%;
 }
-/*Atc1_Left*/
+/*Atc1_Left: 동영상 영역*/
 /*---------------------------------------*/
 .Atc1 .Atc1_Left {
   width: 89%;
@@ -178,7 +178,7 @@ body {
   width: 94%;
   border-radius: 2rem;
 }
-/*Atc1_Left_a_box_Left*/
+/*Atc1_Left_a_box_Left:동영상 좌하단-"더 알아보기→" 부분*/
 /*---------------------------------------*/
 .Atc1_Left .Atc1_Left_a_box_Left {
   width: 15%;
@@ -211,7 +211,7 @@ body {
  background: rgba(0,0,0,0.8)
 }
 
-/*Atc1_Left_a_box_right*/
+/*Atc1_Left_a_box_right:동영상 우상단-전구 영역*/
 /*---------------------------------------*/
 .Atc1_Left .Atc1_Left_a_box_right {
   background: #fff;
@@ -255,7 +255,7 @@ body {
   opacity: 1;
 }
 
-/*Atc1_Right*/
+/*Atc1_Right: 세로 박스 3개 영역*/
 /*---------------------------------------*/
 .Atc1_Right {
   width: 20%;
