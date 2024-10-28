@@ -1,0 +1,8 @@
+
+/* 다른 css파일 로딩 */
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
+
+h1 {
+    font-size: 1.5rem;
+    color: green;
+}
