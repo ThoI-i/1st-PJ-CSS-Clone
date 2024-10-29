@@ -54,7 +54,9 @@ body {
   .Atc1_Right_Top_1stType_cover
   .Atc1_Right_Top_1stType_content
   em,
-.Atc1_Right_mid .Atc1_Right_mid_1stType .Atc1_Right_mid_black_head {
+.Atc1_Right_mid .Atc1_Right_mid_1stType .Atc1_Right_mid_black_head,
+.Atc1_Right_bottom .Atc1_Right_bottom_2ndType .Atc1_Right_bottom_text,
+.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album .Atc1_Right_bottom_text_box .Atc1_Right_bottom_text {
   letter-spacing: -0.1rem;
 }
 .header_fixed .header_text_ul li {
@@ -202,7 +204,7 @@ body {
 /*main → Atc1:첫 번째 아티클 영역: 동영상 + 세로 박스 3개*/
 /*=======================================================================*/
 .Atc1 {
-  padding-top: 16vh;
+  padding-top: 10vh;
   width: 100%;
   /* margin: auto 0; */
   display: flex;
@@ -210,8 +212,9 @@ body {
 /*Atc1_Left: 동영상 영역*/
 /*---------------------------------------*/
 .Atc1 .Atc1_Left {
-  width: 75vw;
-  margin-left: 5%;
+  width: 74.5vw;
+  margin: 0 0.8% 0 5%;
+  
   position: relative;
 }
 .Atc1 .Atc1_Left video {
@@ -306,6 +309,9 @@ body {
 .Atc1_Right {
   display: black;
   width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
   /* margin: auto 0; */
 }
 .Atc1_Right .Atc1_Right_Top {
@@ -321,7 +327,8 @@ body {
 .Atc1_Right .Atc1_Right_Top .Atc1_Right_Top_2ndType img,
 .Atc1_Right .Atc1_Right_mid,
 .Atc1_Right .Atc1_Right_bottom,
-.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album::after {
+.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album::after,
+.Atc1_Right_bottom .Atc1_Right_bottom_2ndType {
   border-radius: 1.5rem;
 }
 
@@ -468,21 +475,19 @@ body {
 .Atc1_Right_mid .Atc1_Right_mid_black_head,
 .Atc1_Right_mid .Atc1_Right_mid_yellow_head {
   position: absolute;
-  top: 5%;
-  left: 7%;
+  top: 0;
+  left: 0.8%;
 }
 .Atc1_Right_mid .Atc1_Right_mid_content,
 .Atc1_Right_mid .Atc1_Right_mid_content em {
   font-weight: 550;
 }
 .Atc1_Right_mid .Atc1_Right_mid_content {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-.Atc1_Right_mid .Atc1_Right_mid_content {
+  font-size: 1.3rem;
+  line-height: 1.6;
   position: absolute;
-  top: 18%;
-  left: 7%;
+  top: 13%;
+  left: 1%;
 }
 .Atc1_Right_mid .Atc1_Right_mid_content em {
   color: #666666;
@@ -493,13 +498,13 @@ body {
 .Atc1_Right .Atc1_Right_bottom {
   width: 17rem;
   height: 164px;
-} 
-.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album {
   position: relative;
-  overflow: hidden; /* 부모 요소를 벗어나지 않도록 설정 */
+} 
+.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_1stType .Atc1_Right_bottom_Album {
+  position: relative;
 }
 
-.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album::before {
+.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album::after {
   content: '';
   position: absolute;
   top: 0;
@@ -509,6 +514,28 @@ body {
   background: rgba(0, 0, 0, 0.2); /* 원하는 투명도 조절 */
   z-index: 1; /* 검은 막을 텍스트와 이미지 위에 표시 */
 }
+.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album_button img {
+  width: 32px;
+  height: 32px;
+  z-index: 5;
+}
+
+.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album_button .Atc1_Right_bottom_Album_button_left {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, -50%);
+  z-index: 6;
+}
+
+.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album_button .Atc1_Right_bottom_Album_button_right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0%, -50%);
+  z-index: 6;
+}
+
 .Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album a {
   display: block;
   width: 100%;
@@ -525,9 +552,37 @@ body {
   font-weight: 540;
   z-index: 3; /* 텍스트가 검은 막 위에 위치하도록 */
 }
+
 .Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album img {
   width: 100%;
   height: 100%;
 }
 
+.Atc1_Right_bottom .Atc1_Right_bottom_2ndType {
+  background: #FAE100; /* 노란색 배경 */
+  position: absolute; /* 자식 요소 위치 조정을 위해 설정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  z-index: 5;
+}
 
+.Atc1_Right_bottom .Atc1_Right_bottom_2ndType .Atc1_Right_bottom_text {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 540;
+  z-index: 3; /* 텍스트가 검은 막 위에 위치하도록 */
+}
+
+.Atc1_Right_bottom .Atc1_Right_bottom_2ndType img {
+  position: absolute;
+  width: 5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
