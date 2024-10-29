@@ -1,0 +1,191 @@
+
+/* reset */
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css');
+
+/* a태그 속성 초기화 */
+a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 링크 색상을 부모 색상과 동일하게 설정 */
+}
+body{
+    background: rgba(255,255,255,.9);
+}
+header {
+    display: flex;
+    background: pink;
+}
+
+section.summary .top h2{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+section.summary .top p{
+    width: 70%;
+    margin: 10px auto;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+section.summary .top .emoji {
+    width: 4rem;
+    height: auto;
+    vertical-align: middle;
+}
+section.summary ul.sub-container{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+section.summary ul.sub-container li{
+    width: 30%;
+    background: #fff;
+    margin-bottom: 96px;
+    height: 450px;
+}
+section.summary ul.sub-container li a .img-box{
+    height: 450px;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex; /* Flexbox 사용 */
+    flex-direction: column; /* 세로 방향으로 배치 */
+    box-shadow: 1px 1px 1px 1px rgba(240, 240, 240, 0.9);
+}    
+section.summary ul.sub-container li a .img-box img{
+    width: 100%;
+    text-align: end;
+}
+section.summary ul.sub-container li a .img-box .text{
+    flex: 1; /* 텍스트 영역이 절반 차지 */
+    position: relative;
+}
+section.summary ul.sub-container li a .img-box .text .emoji{
+    width: 2rem;
+    height: auto;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+section.summary ul.sub-container li a .img-box .text .text-title{
+    font-size: 15px;
+    padding: 20px;
+}
+section.summary ul.sub-container li a .img-box .text p:nth-child(2){
+    font-size: 30px;
+    font-weight: 700;
+    margin: auto 20px;
+    line-height: 1.2;
+    position: relative;
+}
+section.summary ul.sub-container li a .img-box .text span{
+    color: #888;
+    font-size: 15px;
+    position: absolute;
+    margin: 30px 20px 20px;
+}
+section.summary ul.sub-container li a .img-box .article-img{
+    flex: 1;
+    width: 100%; /* 너비 100% */
+    height: auto; /* 비율 유지 */
+    object-fit: cover; /*비율 유지하며 잘리도록 설정 */
+}
+
+section.container #history{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+section.container #history h4{
+    font-size: 30px;
+    font-weight: 700;
+}
+section.container #history button{
+    border-radius: 30px;
+    height: 44px;
+    width: 167px;
+    font-size: 16px;
+    background: #dfdfdf;
+    border: 1px solid #fff;
+}
+section.container .main-container li{
+    /* border: 3px solid orange; */
+    display: flex;
+    width: 70%;
+    margin: 10px auto;
+}
+section.container .main-container li a{
+    display: flex;
+}
+section.container .main-container li a .img-box{
+    height: 180px;
+}
+section.container .main-container li a .img-box img{
+    height: 90%;
+    border-radius: 15px;
+}
+section.container .main-container li a .headline{
+    margin-left: 48px;
+    padding: auto;
+}
+section.container .main-container li a .headline p.date{
+    font-size: 18px;
+    line-height: 28px;
+    font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
+}
+section.container .main-container li a .headline p.title{
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 12px;
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+section.container .main-container li a .headline span{
+    color: #888;
+}
+
+section.container .button{
+    display: flex;
+    justify-content: center;
+}
+section.container .button button{
+    width: 180px;
+    height: 60px;
+    border-radius: 60px;
+    margin: 22px 0 auto;
+    font-weight: 700;
+    font-size: 18px;
+    background: #eee;
+    border: 1px solid #fff;
+}
+
+
+/* footer */
+section.service{
+    border-top: 1px solid #000;
+    background: yellow;
+    padding-top: 36px;
+    margin: 182px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+section.service h5{
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1.38;
+    letter-spacing: -.6px;
+    border: 1px solid blue;
+}
+section.service ul{
+    border: 1px solid red;
+    width: 15%;
+   
+}
