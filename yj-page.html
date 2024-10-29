@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="/img_JW/JW_kakao_logo_favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -121,10 +123,10 @@
 
     <!-- section.container -->
     <section class="container">
-        <div id="history">
-            <h4>연도별 히스토리</h4>
-            <button>모든 연도<i class="fa-solid fa-sort-down"></i></button>
-        </div>
+            <div class="yearly_history">
+                <h4>연도별 히스토리</h4>
+                <button id="all_year">모든 연도<i class="fa-solid fa-sort-down"></i></button>
+            </div>
         <ul class="main-container">
             <li>
                 <a href="https://www.kakaocorp.com/page/detail/10802">
@@ -251,84 +253,106 @@
             <button>더보기</button>
         </div>
 
-        <button class="link top"></button>
+        <!-- <button class="link top"></button> -->
+    </section>
     <!-- //section.container -->
 
     <!-- section.service -->
-    </section>
     <section class="service">
         <h5>오늘의 카카오</h5>
-        <ul>
-            <li><a href="#">카카오톡 공식 다운로드</a></li>
-            <li><a href="#">카카오톡백업</a></li>
-            <li><a href="#">#카카오 이모티콘샵</a></li>
-            <li><a href="#">#조용한채팅방</a></li>
-            <li><a href="#">#카카오맵</a></li>
-            <li><a href="#">#지속가능성</a></li>
-            <li><a href="#">#개발자도구</a></li>
-        </ul>
-        <p>카카오 그룹의 서비스</p>
-        <ul>
-            <li><a href="#">커뮤니케이션</a></li>
-            <li><a href="#">일상편의</a></li>
-            <li><a href="#">비즈니스</a></li>
-            <li><a href="#">쇼핑</a></li>
-            <li><a href="#">엔터테인먼트</a></li>
-            <li><a href="#">임팩트</a></li>
-        </ul>
-        <p>카카오 그룹</p>
-        <ul>
-            <li><a href="#">카카오</a></li>
-            <li><a href="#">카카오페이</a></li>
-            <li><a href="#">카카오뱅크</a></li>
-            <li><a href="#">카카오모빌리티</a></li>
-            <li><a href="#">카카오스타일</a></li>
-            <li><a href="#">카카오엔터테인먼트</a></li>
-            <li><a href="#">카카오게임즈</a></li>
-            <li><a href="#">카카오픽코마</a></li>
-            <li><a href="#">카카오엔터프라이즈</a></li>
-            <li><a href="#">카카오헬스케어</a></li>
-            <li><a href="#">카카오벤처스</a></li>
-            <li><a href="#">카카오인베스트먼트</a></li>
-            <li><a href="#">링키지랩</a></li>
-        </ul>
-        <p>IR</p>
-        <ul>
-            <li><a href="#">기업지배구조</a></li>
-            <li><a href="#">주가정보</a></li>
-            <li><a href="#">재무정보</a></li>
-            <li><a href="#">IR행사</a></li>
-            <li><a href="#">공시정보</a></li>
-            <li><a href="#">공고</a></li>
-        </ul>
-        <p>계정 및 지원</p>
-        <ul>
-            <li><a href="#">카카오계정</a></li>
-            <li><a href="#">카카오 프라이버시</a></li>
-            <li><a href="#">카카오 고객센터</a></li>
-            <li><a href="#">다음 고객센터</a></li>
-            <li><a href="#">커머스 고객센터</a></li>
-            <li><a href="#">인재영입</a></li>
-        </ul>
+        <div class="wrap_service">
+            <div class="detail_service">    
+                <ul class="list_service" id="goto">
+                    <li><a href="#">카카오톡 공식 다운로드</a></li>
+                    <li><a href="#">카카오톡백업</a></li>
+                    <li><a href="#">#카카오 이모티콘샵</a></li>
+                    <li><a href="#">#조용한채팅방</a></li>
+                    <li><a href="#">#카카오맵</a></li>
+                    <li><a href="#">#지속가능성</a></li>
+                    <li><a href="#">#개발자도구</a></li>
+                </ul>
+            </div>
+            <div class="detail_service">
+                <p>카카오 그룹의 서비스</p>
+                <ul class="list_service">
+                    <li><a href="#">커뮤니케이션</a></li>
+                    <li><a href="#">비즈니스</a></li>
+                    <li><a href="#">일상편의</a></li>
+                    <li><a href="#">엔터테인먼트</a></li>
+                    <li><a href="#">쇼핑</a></li>
+                    <li><a href="#">임팩트</a></li>
+                </ul>
+            </div>
+            <div class="detail_service">
+                <p>카카오 그룹</p>
+                <ul class="list_service">
+                    <li><a href="#">카카오</a></li>
+                    <li><a href="#">카카오페이</a></li>
+                    <li><a href="#">카카오뱅크</a></li>
+                    <li><a href="#">카카오모빌리티</a></li>
+                    <li><a href="#">카카오스타일</a></li>
+                    <li><a href="#">카카오엔터테인먼트</a></li>
+                </ul>
+            </div>
+            <div class="detail_service">
+                <ul class="list_service">
+                    <li><a href="#">카카오게임즈</a></li>
+                    <li><a href="#">카카오픽코마</a></li>
+                    <li><a href="#">카카오엔터프라이즈</a></li>
+                    <li><a href="#">카카오헬스케어</a></li>
+                    <li><a href="#">카카오벤처스</a></li>
+                    <li><a href="#">카카오인베스트먼트</a></li>
+                    <li><a href="#">링키지랩</a></li>
+                </ul>
+            </div>
+            <div class="detail_service">
+                <p>IR</p>
+                <ul class="list_service">
+                    <li><a href="#">기업지배구조</a></li>
+                    <li><a href="#">주가정보</a></li>
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">IR행사</a></li>
+                    <li><a href="#">공시정보</a></li>
+                    <li><a href="#">공고</a></li>
+                </ul>
+            </div>
+            <div class="detail_service">
+                <p>계정 및 지원</p>
+                <ul class="list_service">
+                    <li><a href="#">카카오계정</a></li>
+                    <li><a href="#">카카오 프라이버시</a></li>
+                    <li><a href="#">카카오 고객센터</a></li>
+                    <li><a href="#">다음 고객센터</a></li>
+                    <li><a href="#">커머스 고객센터</a></li>
+                    <li><a href="#">인재영입</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
     <!-- //section.service -->
         
     <!-- footer -->
     <footer>
-        <ul>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">위치정보 이용약관</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">운영정책</a></li>
-            <li><a href="#">청소년보호정책</a></li>
-            <li><a href="#">접근성 안내</a></li>
-            <li><a href="#">브랜드보호정책</a></li>
-            <li><a href="#">권리침해신고안내</a></li>
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">사이버윤리실</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
+        <div class="contact_info">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">위치정보 이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">운영정책</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">접근성 안내</a></li>
+                <li><a href="#">브랜드보호정책</a></li>
+                <li><a href="#">권리침해신고안내</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">사이버윤리실</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>  
+            <div class="related_site_button">
+                <button>관련사이트<i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
         <address>© Kakao Corp. All rights reserved.</address>
+        
     </footer>
     <!-- //footer -->
 
