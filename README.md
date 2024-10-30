@@ -56,7 +56,7 @@ color: inherit; /* 링크 색상을 부모 색상과 동일하게 설정 */
   ```
 </details> 
 <details>
-<summary>박스 내 텍스트/이미지가 절반 영역하도록 설정정</summary>
+<summary>박스 내 텍스트/이미지가 절반 영역하도록 설정</summary>
 1. Flexbox: .img-box에 display: flex;와 flex-direction: column;을 사용하여 텍스트와 이미지를 세로로 배치합니다.
 2 . flex: 1: 각 요소에 flex: 1;을 설정하여 텍스트와 이미지가 각각의 높이를 절반씩 차지하도록 합니다.
 </details>
