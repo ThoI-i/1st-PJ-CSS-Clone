@@ -18,6 +18,10 @@
 
 ![VS Code Badge](https://img.shields.io/badge/Visual%20Studio%20Code_1.95.0-007ACC?logo=visual-studio-code&logoColor=white)
 
+## 시연 영상
+[![시연 영상](https://img.youtube.com/vi/2FFSOXD-sKw/0.jpg)](https://youtu.be/2FFSOXD-sKw)
+
+
 
 ## **[메인 페이지](https://www.kakaocorp.com/page/)**
 ![메인 페이지](https://cdn.discordapp.com/attachments/1300055715003633667/1300779047084757023/image.png?ex=67221464&is=6720c2e4&hm=0e55d7e46f00ecd15d2ea56f005253598e0a3fcac5a228c244dba6b1399de305&.png.)
