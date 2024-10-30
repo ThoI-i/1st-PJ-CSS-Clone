@@ -8,151 +8,191 @@
 /*header*/
 /*=======================================================================*/
 .header_fixed {
-    /* background: green; */
-    position: fixed;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-    text-align: center;
-    width: 100%;
-    margin: auto 0;
-    z-index: 100;
-  }
-  
-  /* header_logo:헤더 좌상단-kakao */
-  /*---------------------------------------*/
-  .header_fixed .header_logo {
-    font-family: 'KakaoBold', sans-serif;
-    width: 14%;
-    font-size: 1.6rem;
-    font-weight: 400;
-  }
-  /*header_text_ul:헤더 중심부-텍스트 영역(소개/이야기/기술과 서비스/약속과 책임/뉴스/투자 정보*/
-  /*---------------------------------------*/
-  .header_fixed .header_text_ul {
-    /* background: red; */
-    font-family: 'KakaoOTFRegular', sans-serif;
-    width: 45%;
-    margin-left: 15rem;
-    font-weight: 540;
-    position: relative;
-    margin-right: 3%;
-  }  
-  .header_fixed .header_text_ul,
-  .Atc1_Left .Atc1_Left_a_box_Left,
-  .Atc1_Left .Atc1_Left_text_right,
-  .Atc1_Right .Atc1_Right_Top .Atc1_Right_Top_1stType_cover .Atc1_Right_Top_1stType_content em,
-  .Atc1_Right_mid .Atc1_Right_mid_1stType .Atc1_Right_mid_black_head
-  {
-    letter-spacing: -0.1rem;
-  }
-  .header_fixed .header_text_ul li {
-    display: inline-flex;
-    margin: 0 0.3rem;
-  }
-  .header_fixed .header_text_ul li .header_text_ul_li_a {
-    display: block;
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-  }
-  .header_fixed .header_text_ul li a:hover{
-    font-weight: 600;
-    text-decoration: underline;
-  }
-  .header_fixed .header_text_ul .header_text_ul_icon {
-    /* border: 4px solid #000; */
-      position: relative;
-    }
-    /*header_icon_ul: 투자정보"↑" 부분*/
-  .header_fixed .header_text_ul i {
-    /* background: red; */
-    font-size: 0.6rem;
-    position: absolute;
-    top: 2.2rem;
-  }
-  /*header_icon_ul:헤더 우상단-아이콘 영역/
-  /*---------------------------------------*/
-  .header_fixed .header_icon_ul{
-    /* background: blue; */
-    text-align: end;
-    width: 20%;
-    margin-right: 5%;
-  }
-  .header_fixed .header_icon_ul li {
-    font-size: 1.2rem;
-    display: inline-flex;
-  }
-  .header_fixed .header_icon_ul li a{
-    display: block;
-    padding: 0.4rem;
-    margin: 0.2rem;
-    width: 100%;
-    height: 100%;
-  }
-  .header_fixed .header_icon_ul li:hover {
-    background: rgba(128, 128, 128, 0.15);
-    border-radius: 100%;
-  }
-  /*header_text_ul_1st_li:헤더 중심부-텍스트 영역:hover 시 상세 메뉴*/
-  /*---------------------------------------*/
-  .header_fixed .header_text_ul .header_text_ul_1st_li .header_text_ul_1st_li_ul,
-  .header_fixed .header_text_ul .header_text_ul_2nd_li .header_text_ul_2nd_li_ul,
-  .header_fixed .header_text_ul .header_text_ul_3rd_li .header_text_ul_3rd_li_ul,
-  .header_fixed .header_text_ul .header_text_ul_4th_li .header_text_ul_4th_li_ul,
-  .header_fixed .header_text_ul .header_text_ul_5th_li .header_text_ul_5th_li_ul{
-    opacity: 0;
-    position: absolute;
-    padding: 1rem;
-    font-weight: 540;
-    background-color: black;
-    border-radius: 3rem;
-    display: inline-flex;
-    flex-wrap: nowrap;
-  }
-  .header_fixed .header_text_ul .header_text_ul_1st_li .header_text_ul_1st_li_ul a,
-  .header_fixed .header_text_ul .header_text_ul_2nd_li .header_text_ul_2nd_li_ul a,
-  .header_fixed .header_text_ul .header_text_ul_3rd_li .header_text_ul_3rd_li_ul a,
-  .header_fixed .header_text_ul .header_text_ul_4th_li .header_text_ul_4th_li_ul a,
-  .header_fixed .header_text_ul .header_text_ul_5th_li .header_text_ul_5th_li_ul a {
-    color: white;
-    text-align: left;
-  }
-  .header_fixed .header_text_ul .header_text_ul_1st_li:hover .header_text_ul_1st_li_ul,
-  .header_fixed .header_text_ul .header_text_ul_2nd_li:hover .header_text_ul_2nd_li_ul,
-  .header_fixed .header_text_ul .header_text_ul_3rd_li:hover .header_text_ul_3rd_li_ul,
-  .header_fixed .header_text_ul .header_text_ul_4th_li:hover .header_text_ul_4th_li_ul,
-  .header_fixed .header_text_ul .header_text_ul_5th_li:hover .header_text_ul_5th_li_ul{
-    opacity: 1
-  }
-  /* header_text_ul_1st_li_ul */
-  .header_fixed .header_text_ul .header_text_ul_1st_li .header_text_ul_1st_li_ul
-  {
-    top: 70%; 
-  }
-  /* header_text_ul_2nd_li_ul */
-  /*---------------------------------------*/
-  .header_fixed .header_text_ul .header_text_ul_2nd_li .header_text_ul_2nd_li_ul {
-    top: 130%; 
-  }
-  /* header_text_ul_3rd_li_ul */
-  /*---------------------------------------*/
-  .header_fixed .header_text_ul .header_text_ul_3rd_li .header_text_ul_3rd_li_ul {
-    top: 70%; 
-  }
-  /* header_text_ul_4th_li_ul */
-  /*---------------------------------------*/
-  .header_fixed .header_text_ul .header_text_ul_4th_li .header_text_ul_4th_li_ul {
-    top: 130%; 
-  }
-  /* header_text_ul_5th_li_ul */
-  /*---------------------------------------*/
-  .header_fixed .header_text_ul .header_text_ul_5th_li .header_text_ul_5th_li_ul {
-    top: 70%; 
-  }
-  /* END header */
-  /*=======================================================================*/
+  /* background: green; */
+  position: fixed;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: auto 0;
+  z-index: 100;
+}
+
+/* header_logo:헤더 좌상단-kakao */
+/*---------------------------------------*/
+.header_fixed .header_logo {
+  font-family: "KakaoBold", sans-serif;
+  width: 14%;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+/*header_text_ul:헤더 중심부-텍스트 영역(소개/이야기/기술과 서비스/약속과 책임/뉴스/투자 정보*/
+/*---------------------------------------*/
+.header_fixed .header_text_ul {
+  /* background: red; */
+  font-family: "KakaoOTFRegular", sans-serif;
+  width: 45%;
+  margin-left: 15rem;
+  font-weight: 540;
+  position: relative;
+  margin-right: 3%;
+}
+.header_fixed .header_text_ul,
+.Atc1_Left .Atc1_Left_a_box_Left,
+.Atc1_Left .Atc1_Left_text_right,
+.Atc1_Right
+  .Atc1_Right_Top
+  .Atc1_Right_Top_1stType_cover
+  .Atc1_Right_Top_1stType_content
+  em,
+.Atc1_Right_mid .Atc1_Right_mid_1stType .Atc1_Right_mid_black_head,
+.Atc1_Right_bottom .Atc1_Right_bottom_2ndType .Atc1_Right_bottom_text,
+.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album .Atc1_Right_bottom_text_box .Atc1_Right_bottom_text {
+  letter-spacing: -0.1rem;
+}
+.header_fixed .header_text_ul li {
+  display: inline-flex;
+  margin: 0 0.3rem;
+}
+.header_fixed .header_text_ul li .header_text_ul_li_a {
+  display: block;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.header_fixed .header_text_ul li a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.header_fixed .header_text_ul .header_text_ul_icon {
+  /* border: 4px solid #000; */
+  position: relative;
+}
+/*header_icon_ul: 투자정보"↑" 부분*/
+.header_fixed .header_text_ul i {
+  /* background: red; */
+  font-size: 0.6rem;
+  position: absolute;
+  top: 2.2rem;
+}
+/*header_icon_ul:헤더 우상단-아이콘 영역/
+/*---------------------------------------*/
+.header_fixed .header_icon_ul {
+  /* background: blue; */
+  text-align: end;
+  width: 20%;
+
+  margin-right: 5%;
+}
+.header_fixed .header_icon_ul li {
+  font-size: 1.2rem;
+  display: inline-flex;
+}
+.header_fixed .header_icon_ul li a {
+  display: block;
+  padding: 0.4rem;
+  margin: 0.2rem;
+  width: 100%;
+  height: 100%;
+}
+.header_fixed .header_icon_ul li:hover {
+  background: rgba(128, 128, 128, 0.15);
+  border-radius: 100%;
+}
+/*header_text_ul_1st_li:헤더 중심부-텍스트 영역:hover 시 상세 메뉴*/
+/*---------------------------------------*/
+.header_fixed .header_text_ul .header_text_ul_1st_li .header_text_ul_1st_li_ul,
+.header_fixed .header_text_ul .header_text_ul_2nd_li .header_text_ul_2nd_li_ul,
+.header_fixed .header_text_ul .header_text_ul_3rd_li .header_text_ul_3rd_li_ul,
+.header_fixed .header_text_ul .header_text_ul_4th_li .header_text_ul_4th_li_ul,
+.header_fixed .header_text_ul .header_text_ul_5th_li .header_text_ul_5th_li_ul {
+  opacity: 0;
+  position: absolute;
+  padding: 1rem;
+  font-weight: 540;
+  background-color: black;
+  border-radius: 3rem;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+.header_fixed
+  .header_text_ul
+  .header_text_ul_1st_li
+  .header_text_ul_1st_li_ul
+  a,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_2nd_li
+  .header_text_ul_2nd_li_ul
+  a,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_3rd_li
+  .header_text_ul_3rd_li_ul
+  a,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_4th_li
+  .header_text_ul_4th_li_ul
+  a,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_5th_li
+  .header_text_ul_5th_li_ul
+  a {
+  color: white;
+  text-align: left;
+}
+.header_fixed
+  .header_text_ul
+  .header_text_ul_1st_li:hover
+  .header_text_ul_1st_li_ul,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_2nd_li:hover
+  .header_text_ul_2nd_li_ul,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_3rd_li:hover
+  .header_text_ul_3rd_li_ul,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_4th_li:hover
+  .header_text_ul_4th_li_ul,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_5th_li:hover
+  .header_text_ul_5th_li_ul {
+  opacity: 1;
+}
+/* header_text_ul_1st_li_ul */
+.header_fixed .header_text_ul .header_text_ul_1st_li .header_text_ul_1st_li_ul {
+  top: 70%;
+}
+/* header_text_ul_2nd_li_ul */
+/*---------------------------------------*/
+.header_fixed .header_text_ul .header_text_ul_2nd_li .header_text_ul_2nd_li_ul {
+  top: 130%;
+}
+/* header_text_ul_3rd_li_ul */
+/*---------------------------------------*/
+.header_fixed .header_text_ul .header_text_ul_3rd_li .header_text_ul_3rd_li_ul {
+  top: 70%;
+}
+/* header_text_ul_4th_li_ul */
+/*---------------------------------------*/
+.header_fixed .header_text_ul .header_text_ul_4th_li .header_text_ul_4th_li_ul {
+  top: 130%;
+}
+/* header_text_ul_5th_li_ul */
+/*---------------------------------------*/
+.header_fixed .header_text_ul .header_text_ul_5th_li .header_text_ul_5th_li_ul {
+  top: 70%;
+}
+/* END header */
+/*=======================================================================*/
 
 /* a태그 속성 초기화 */
 a {
