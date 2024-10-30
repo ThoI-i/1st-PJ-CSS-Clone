@@ -5,6 +5,195 @@
 /* font awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css');
 
+/*header*/
+/*=======================================================================*/
+.header_fixed {
+  /* background: green; */
+  position: fixed;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: auto 0;
+  z-index: 100;
+}
+
+/* header_logo:헤더 좌상단-kakao */
+/*---------------------------------------*/
+.header_fixed .header_logo {
+  font-family: "KakaoBold", sans-serif;
+  width: 14%;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+/*header_text_ul:헤더 중심부-텍스트 영역(소개/이야기/기술과 서비스/약속과 책임/뉴스/투자 정보*/
+/*---------------------------------------*/
+.header_fixed .header_text_ul {
+  /* background: red; */
+  font-family: "KakaoOTFRegular", sans-serif;
+  width: 45%;
+  margin-left: 15rem;
+  font-weight: 540;
+  position: relative;
+  margin-right: 3%;
+}
+.header_fixed .header_text_ul,
+.Atc1_Left .Atc1_Left_a_box_Left,
+.Atc1_Left .Atc1_Left_text_right,
+.Atc1_Right
+  .Atc1_Right_Top
+  .Atc1_Right_Top_1stType_cover
+  .Atc1_Right_Top_1stType_content
+  em,
+.Atc1_Right_mid .Atc1_Right_mid_1stType .Atc1_Right_mid_black_head,
+.Atc1_Right_bottom .Atc1_Right_bottom_2ndType .Atc1_Right_bottom_text,
+.Atc1_Right .Atc1_Right_bottom .Atc1_Right_bottom_Album .Atc1_Right_bottom_text_box .Atc1_Right_bottom_text {
+  letter-spacing: -0.1rem;
+}
+.header_fixed .header_text_ul li {
+  display: inline-flex;
+  margin: 0 0.3rem;
+}
+.header_fixed .header_text_ul li .header_text_ul_li_a {
+  display: block;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.header_fixed .header_text_ul li a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.header_fixed .header_text_ul .header_text_ul_icon {
+  /* border: 4px solid #000; */
+  position: relative;
+}
+/*header_icon_ul: 투자정보"↑" 부분*/
+.header_fixed .header_text_ul i {
+  /* background: red; */
+  font-size: 0.6rem;
+  position: absolute;
+  top: 2.2rem;
+}
+/*header_icon_ul:헤더 우상단-아이콘 영역/
+/*---------------------------------------*/
+.header_fixed .header_icon_ul {
+  /* background: blue; */
+  text-align: end;
+  width: 20%;
+
+  margin-right: 5%;
+}
+.header_fixed .header_icon_ul li {
+  font-size: 1.2rem;
+  display: inline-flex;
+}
+.header_fixed .header_icon_ul li a {
+  display: block;
+  padding: 0.4rem;
+  margin: 0.2rem;
+  width: 100%;
+  height: 100%;
+}
+.header_fixed .header_icon_ul li:hover {
+  background: rgba(128, 128, 128, 0.15);
+  border-radius: 100%;
+}
+/*header_text_ul_1st_li:헤더 중심부-텍스트 영역:hover 시 상세 메뉴*/
+/*---------------------------------------*/
+.header_fixed .header_text_ul .header_text_ul_1st_li .header_text_ul_1st_li_ul,
+.header_fixed .header_text_ul .header_text_ul_2nd_li .header_text_ul_2nd_li_ul,
+.header_fixed .header_text_ul .header_text_ul_3rd_li .header_text_ul_3rd_li_ul,
+.header_fixed .header_text_ul .header_text_ul_4th_li .header_text_ul_4th_li_ul,
+.header_fixed .header_text_ul .header_text_ul_5th_li .header_text_ul_5th_li_ul {
+  opacity: 0;
+  position: absolute;
+  padding: 1rem;
+  font-weight: 540;
+  background-color: black;
+  border-radius: 3rem;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+.header_fixed
+  .header_text_ul
+  .header_text_ul_1st_li
+  .header_text_ul_1st_li_ul
+  a,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_2nd_li
+  .header_text_ul_2nd_li_ul
+  a,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_3rd_li
+  .header_text_ul_3rd_li_ul
+  a,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_4th_li
+  .header_text_ul_4th_li_ul
+  a,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_5th_li
+  .header_text_ul_5th_li_ul
+  a {
+  color: white;
+  text-align: left;
+}
+.header_fixed
+  .header_text_ul
+  .header_text_ul_1st_li:hover
+  .header_text_ul_1st_li_ul,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_2nd_li:hover
+  .header_text_ul_2nd_li_ul,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_3rd_li:hover
+  .header_text_ul_3rd_li_ul,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_4th_li:hover
+  .header_text_ul_4th_li_ul,
+.header_fixed
+  .header_text_ul
+  .header_text_ul_5th_li:hover
+  .header_text_ul_5th_li_ul {
+  opacity: 1;
+}
+/* header_text_ul_1st_li_ul */
+.header_fixed .header_text_ul .header_text_ul_1st_li .header_text_ul_1st_li_ul {
+  top: 70%;
+}
+/* header_text_ul_2nd_li_ul */
+/*---------------------------------------*/
+.header_fixed .header_text_ul .header_text_ul_2nd_li .header_text_ul_2nd_li_ul {
+  top: 130%;
+}
+/* header_text_ul_3rd_li_ul */
+/*---------------------------------------*/
+.header_fixed .header_text_ul .header_text_ul_3rd_li .header_text_ul_3rd_li_ul {
+  top: 70%;
+}
+/* header_text_ul_4th_li_ul */
+/*---------------------------------------*/
+.header_fixed .header_text_ul .header_text_ul_4th_li .header_text_ul_4th_li_ul {
+  top: 130%;
+}
+/* header_text_ul_5th_li_ul */
+/*---------------------------------------*/
+.header_fixed .header_text_ul .header_text_ul_5th_li .header_text_ul_5th_li_ul {
+  top: 70%;
+}
+/* END header */
+/*=======================================================================*/
+
 /* a태그 속성 초기화 */
 a {
   text-decoration: none; /* 밑줄 제거 */
@@ -13,9 +202,10 @@ a {
 body{
     background: rgba(255,255,255,.9);
 }
-header {
-    display: flex;
-    background: pink;
+
+section.summary .top{
+    /* border: 1px solid pink; */
+    padding-top: 150px;
 }
 
 section.summary .top h2{
@@ -48,7 +238,7 @@ section.summary ul.sub-container{
 section.summary ul.sub-container li{
     width: 30%;
     background: #fff;
-    margin-bottom: 96px;
+    margin-bottom: 180px;
     height: 450px;
 }
 section.summary ul.sub-container li a .img-box{
@@ -97,6 +287,10 @@ section.summary ul.sub-container li a .img-box .article-img{
     object-fit: cover; /*비율 유지하며 잘리도록 설정 */
 }
 
+section.container{ /**/
+  border-bottom: 1px solid #000;
+}
+
 section.container #history{
     display: flex;
     width: 70%;
@@ -104,17 +298,47 @@ section.container #history{
     justify-content: space-between;
     margin-bottom: 48px;
 }
-section.container #history h4{
+section.container h4{
     font-size: 30px;
+    line-height: 40px;
     font-weight: 700;
+    padding-left: 292px;
+    padding-right: 292px;
+    margin-bottom: 48px;
 }
-section.container #history button{
+section.container .yearly_history{
+  position: relative;
+}
+section.container button{
     border-radius: 30px;
     height: 44px;
     width: 167px;
     font-size: 16px;
-    background: #dfdfdf;
-    border: 1px solid #fff;
+    background: #eee;
+    border: 1px solid #eee;
+    border: 1px solid red;
+    /* position: absolute; */
+}
+section.container button#all_year{
+  border-radius: 30px;
+  height: 44px;
+  width: 167px;
+  font-size: 16px;
+  background: #eee;
+  border: 1px solid #eee;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  font-weight: 700;
+  letter-spacing: -.5px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section.container button#all_year i{
+  position: relative;
+  top: -3px;
 }
 section.container .main-container li{
     /* border: 3px solid orange; */
@@ -165,27 +389,116 @@ section.container .button button{
     font-size: 18px;
     background: #eee;
     border: 1px solid #fff;
+    margin-bottom: 182px;
 }
 
-
-/* footer */
+/* 오늘의 서비스 영역 */
 section.service{
-    border-top: 1px solid #000;
-    background: yellow;
-    padding-top: 36px;
-    margin: 182px auto 0 auto;
-    display: flex;
-    justify-content: space-between;
+  margin: 0 281px 0 282px;
 }
 section.service h5{
-    margin-bottom: 20px;
-    font-size: 26px;
-    line-height: 1.38;
-    letter-spacing: -.6px;
-    border: 1px solid blue;
+  margin-top: 81px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.38;
+  letter-spacing: -.6px;
+  /* border: 1px solid blue; */
+    /* width: 100%; */
 }
-section.service ul{
-    border: 1px solid red;
-    width: 15%;
-   
+section.service .wrap_service{
+  /* flex-wrap: wrap; */
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: space-between;
 }
+section.service .wrap_service ul.list_service{
+  /* border: 1px solid pink; */
+  width: 211px;
+}
+section.service .wrap_service ul.list_service li{
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-top: 8px;
+  color: #888;
+}
+section.service .wrap_service ul.list_service#goto li{
+  color: black;
+}
+
+section.service .wrap_service .detail_service p{
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: -.5px;
+  /* border: 1px solid #000; */
+  font-weight: bold;
+}
+section.service .wrap_service .detail_service:nth-child(4){
+  /* background: olivedrab; */
+  padding-top: 28px;
+}
+
+/* //오늘의 서비스 영역 끝!! */
+
+/* 푸터 */
+footer{
+  margin: 0 282px 48px 282px;
+}
+footer ul{
+  display: flex;
+  margin-top: 120px;
+  /* border: 1px solid pink; */
+}
+footer ul li{
+  /* background: pink; */
+  font-size: 12px;
+  letter-spacing: -.2px;
+  color: #888;
+  margin-left: 24px;
+  height: 40px;
+}
+footer ul li:nth-child(1){
+  /* background: orange; */
+  margin: 0;
+}
+footer ul li:nth-child(2){
+  color: #333;
+  font-weight: 700;
+}
+footer ul li:nth-child(3){
+  color: #333;
+  font-weight: 700;
+}
+footer address{
+  display: block;
+  padding-top: 6px;
+  font-size: 13px;
+  letter-spacing: -.2px;
+  color: #888;
+}
+footer .contact_info{
+  position: relative;
+}
+footer .related_site_button button{
+  border: 1px solid white;
+  width: 208px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+  border-radius: 24px;
+  height: 40px;
+  background: #eee;
+  text-align: left;
+  padding: 10px 20px 12px;
+  position: absolute;
+  top: -5px;
+  right: 20px;
+}
+footer .related_site_button i{
+  /* border: 1px solid #000; */
+  margin-left: 80px;
+  height: 40px;
+}
+/* 푸터 끝! */
