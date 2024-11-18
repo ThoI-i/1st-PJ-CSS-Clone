@@ -24,7 +24,7 @@
 
 
 ## **[메인 페이지](https://www.kakaocorp.com/page/)**
-![메인 페이지](https://cdn.discordapp.com/attachments/1300055715003633667/1300779047084757023/image.png?ex=67221464&is=6720c2e4&hm=0e55d7e46f00ecd15d2ea56f005253598e0a3fcac5a228c244dba6b1399de305&.png.)
+![메인 페이지](https://velog.velcdn.com/images/thol-i/post/43366301-fe28-4771-bad7-322704521136/image.png)
 
 ## **[뚝딱뚝딱 성장기](https://www.kakaocorp.com/page/story/history)**
 ![뚝딱뚝딱 성장기](https://cdn.discordapp.com/attachments/1300055715003633667/1301047516246310993/image.png?ex=67230e6c&is=6721bcec&hm=858b92f8cb5cdb7a0a613c29c86a1cf09117168861771bccaf96493d6f55e3f0&.png)
